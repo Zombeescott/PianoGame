@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d2d4n4qvpyyo5"]
+
+[ext_resource type="Script" path="res://Scripts/KeyComponent.gd" id="1_ppmi7"]
+
+[node name="KeyComponent" type="TouchScreenButton"]
+script = ExtResource("1_ppmi7")

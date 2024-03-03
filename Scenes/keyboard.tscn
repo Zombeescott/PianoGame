@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bfy5s7rgxkbt"]
+
+[ext_resource type="Script" path="res://Scripts/Keyboard.gd" id="1_3lyc4"]
+[ext_resource type="Texture2D" uid="uid://4xvypeyg4vgk" path="res://Sprites/white.png" id="2_2o8xh"]
+[ext_resource type="PackedScene" uid="uid://d2d4n4qvpyyo5" path="res://Scenes/key_component.tscn" id="3_87y0n"]
+
+[node name="Keyboard" type="Node2D"]
+script = ExtResource("1_3lyc4")
+
+[node name="keyC" type="TouchScreenButton" parent="."]
+scale = Vector2(0.64, 1.76)
+texture_normal = ExtResource("2_2o8xh")
+
+[node name="keyD" type="TouchScreenButton" parent="."]
+position = Vector2(40, 0)
+scale = Vector2(0.64, 1.76)
+texture_normal = ExtResource("2_2o8xh")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="KeyComponent" parent="." instance=ExtResource("3_87y0n")]
