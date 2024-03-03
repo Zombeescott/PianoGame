@@ -1,0 +1,23 @@
+# Godot 4+ specific ignores
+.godot/
+
+# Compiled filesi
+/bin/
+/obj/
+
+# Temporary files
+*.dscache/
+*.import/
+*.imported/
+
+# Godot project configuration
+*.tscn.exported
+*.scn.exported
+*.godot.exported
+
+# User-specific settings
+# Exclude editor settings, per-user scene data, etc.
+*.import.resources
+
+# Ignore exported project builds
+/export/
