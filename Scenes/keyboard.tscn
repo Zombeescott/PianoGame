@@ -1,21 +1,164 @@
-[gd_scene load_steps=4 format=3 uid="uid://bfy5s7rgxkbt"]
+[gd_scene load_steps=5 format=3 uid="uid://3m1nnbahfvme"]
 
 [ext_resource type="Script" path="res://Scripts/Keyboard.gd" id="1_3lyc4"]
-[ext_resource type="Texture2D" uid="uid://4xvypeyg4vgk" path="res://Sprites/white.png" id="2_2o8xh"]
-[ext_resource type="PackedScene" uid="uid://d2d4n4qvpyyo5" path="res://Scenes/key_component.tscn" id="3_87y0n"]
+[ext_resource type="Theme" uid="uid://bgjrf1ffhsv5j" path="res://Assets/whiteKey.tres" id="2_320ij"]
+[ext_resource type="PackedScene" uid="uid://bhlkhlrinqmnh" path="res://Scenes/KeyComponent.tscn" id="2_holbd"]
+[ext_resource type="Theme" uid="uid://7pg2tkcgoci3" path="res://Assets/blackKey.tres" id="3_x4jb4"]
 
-[node name="Keyboard" type="Node2D"]
+[node name="Keyboard" type="Node"]
 script = ExtResource("1_3lyc4")
 
-[node name="keyC" type="TouchScreenButton" parent="."]
-scale = Vector2(0.64, 1.76)
-texture_normal = ExtResource("2_2o8xh")
-
-[node name="keyD" type="TouchScreenButton" parent="."]
-position = Vector2(40, 0)
-scale = Vector2(0.64, 1.76)
-texture_normal = ExtResource("2_2o8xh")
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 24.0
+offset_right = 1176.0
+offset_bottom = 652.0
+color = Color(0.403922, 0.403922, 0.403922, 1)
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 328)
 
-[node name="KeyComponent" parent="." instance=ExtResource("3_87y0n")]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="WhiteNotes" type="PanelContainer" parent="CanvasLayer"]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -312.0
+offset_top = -36.0
+offset_right = 336.0
+offset_bottom = 196.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.10966, 1.13947)
+theme = ExtResource("2_320ij")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/WhiteNotes"]
+layout_mode = 2
+theme = ExtResource("2_320ij")
+
+[node name="C_Whole" parent="CanvasLayer/WhiteNotes/HBoxContainer" instance=ExtResource("2_holbd")]
+layout_mode = 2
+text = "A"
+note = "c_whole"
+
+[node name="D_Whole" parent="CanvasLayer/WhiteNotes/HBoxContainer" instance=ExtResource("2_holbd")]
+layout_mode = 2
+text = "S"
+note = "d_whole"
+
+[node name="E_Whole" parent="CanvasLayer/WhiteNotes/HBoxContainer" instance=ExtResource("2_holbd")]
+layout_mode = 2
+text = "D"
+note = "e_whole"
+
+[node name="F_Whole" parent="CanvasLayer/WhiteNotes/HBoxContainer" instance=ExtResource("2_holbd")]
+layout_mode = 2
+text = "F"
+note = "f_whole"
+
+[node name="G_Whole" parent="CanvasLayer/WhiteNotes/HBoxContainer" instance=ExtResource("2_holbd")]
+layout_mode = 2
+text = "G"
+note = "g_whole"
+
+[node name="A_Whole" parent="CanvasLayer/WhiteNotes/HBoxContainer" instance=ExtResource("2_holbd")]
+layout_mode = 2
+text = "H"
+note = "a_whole"
+
+[node name="B_Whole" parent="CanvasLayer/WhiteNotes/HBoxContainer" instance=ExtResource("2_holbd")]
+layout_mode = 2
+text = "J"
+note = "b_whole"
+
+[node name="C_Whole2" parent="CanvasLayer/WhiteNotes/HBoxContainer" instance=ExtResource("2_holbd")]
+layout_mode = 2
+text = "K"
+note = "c_whole_2"
+octave = 1
+
+[node name="D_Whole2" parent="CanvasLayer/WhiteNotes/HBoxContainer" instance=ExtResource("2_holbd")]
+layout_mode = 2
+text = "L"
+note = "d_whole_2"
+octave = 1
+
+[node name="E_Whole2" parent="CanvasLayer/WhiteNotes/HBoxContainer" instance=ExtResource("2_holbd")]
+layout_mode = 2
+text = ";"
+note = "e_whole_2"
+octave = 1
+
+[node name="F_Whole2" parent="CanvasLayer/WhiteNotes/HBoxContainer" instance=ExtResource("2_holbd")]
+layout_mode = 2
+text = "'"
+note = "f_whole_2"
+octave = 1
+
+[node name="BlackNotes" type="PanelContainer" parent="CanvasLayer"]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 304.0
+offset_top = 192.0
+offset_right = 952.0
+offset_bottom = 424.0
+scale = Vector2(0.895426, 0.795201)
+theme = ExtResource("3_x4jb4")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/BlackNotes"]
+layout_mode = 2
+theme = ExtResource("3_x4jb4")
+
+[node name="C_Sharp" parent="CanvasLayer/BlackNotes/HBoxContainer" instance=ExtResource("2_holbd")]
+layout_mode = 2
+theme = ExtResource("3_x4jb4")
+text = "W"
+note = "c_sharp"
+
+[node name="D_Sharp" parent="CanvasLayer/BlackNotes/HBoxContainer" instance=ExtResource("2_holbd")]
+layout_mode = 2
+theme = ExtResource("3_x4jb4")
+text = "E"
+note = "d_sharp"
+
+[node name="Spacer" type="Control" parent="CanvasLayer/BlackNotes/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="F_Sharp" parent="CanvasLayer/BlackNotes/HBoxContainer" instance=ExtResource("2_holbd")]
+layout_mode = 2
+theme = ExtResource("3_x4jb4")
+text = "T"
+note = "f_sharp"
+
+[node name="G_Sharp" parent="CanvasLayer/BlackNotes/HBoxContainer" instance=ExtResource("2_holbd")]
+layout_mode = 2
+theme = ExtResource("3_x4jb4")
+text = "Y"
+note = "g_sharp"
+
+[node name="A_Sharp" parent="CanvasLayer/BlackNotes/HBoxContainer" instance=ExtResource("2_holbd")]
+layout_mode = 2
+theme = ExtResource("3_x4jb4")
+text = "U"
+note = "a_sharp"
+
+[node name="Spacer2" type="Control" parent="CanvasLayer/BlackNotes/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="C_Sharp2" parent="CanvasLayer/BlackNotes/HBoxContainer" instance=ExtResource("2_holbd")]
+layout_mode = 2
+theme = ExtResource("3_x4jb4")
+text = "O"
+note = "c_sharp_2"
+octave = 1
+
+[node name="D_Sharp2" parent="CanvasLayer/BlackNotes/HBoxContainer" instance=ExtResource("2_holbd")]
+layout_mode = 2
+theme = ExtResource("3_x4jb4")
+text = "P"
+note = "d_sharp_2"
+octave = 1

@@ -1,5 +1,5 @@
-extends Node2D
-
+extends Node
+signal note_pressed
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -10,8 +10,3 @@ func _ready():
 func _process(delta):
 	pass
 
-func _input(event):
-	if Input.is_key_pressed(KEY_A):
-		print("a")
-	if Input.is_key_pressed(KEY_S):
-		print("s")

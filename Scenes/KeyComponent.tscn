@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhlkhlrinqmnh"]
+
+[ext_resource type="Script" path="res://Scripts/KeyComponent.gd" id="1_b6qmj"]
+[ext_resource type="Theme" uid="uid://bgjrf1ffhsv5j" path="res://Assets/whiteKey.tres" id="1_kdtc4"]
+
+[node name="Key" type="Button"]
+offset_left = 880.0
+offset_top = 216.0
+offset_right = 888.0
+offset_bottom = 336.0
+size_flags_horizontal = 3
+theme = ExtResource("1_kdtc4")
+text = "NOTE"
+script = ExtResource("1_b6qmj")
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]
