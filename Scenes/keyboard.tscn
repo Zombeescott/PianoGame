@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://3m1nnbahfvme"]
+[gd_scene load_steps=6 format=3 uid="uid://cp44d2nldwe2a"]
 
 [ext_resource type="Script" path="res://Scripts/Keyboard.gd" id="1_3lyc4"]
 [ext_resource type="Theme" uid="uid://bgjrf1ffhsv5j" path="res://Assets/whiteKey.tres" id="2_320ij"]
 [ext_resource type="PackedScene" uid="uid://bhlkhlrinqmnh" path="res://Scenes/KeyComponent.tscn" id="2_holbd"]
 [ext_resource type="Theme" uid="uid://7pg2tkcgoci3" path="res://Assets/blackKey.tres" id="3_x4jb4"]
+[ext_resource type="PackedScene" uid="uid://brb12g12fwd66" path="res://Scenes/note_player.tscn" id="5_f6cqq"]
 
 [node name="Keyboard" type="Node"]
 script = ExtResource("1_3lyc4")
@@ -14,9 +15,6 @@ offset_right = 1176.0
 offset_bottom = 652.0
 color = Color(0.403922, 0.403922, 0.403922, 1)
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(576, 328)
-
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="WhiteNotes" type="PanelContainer" parent="CanvasLayer"]
@@ -26,10 +24,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -312.0
-offset_top = -36.0
-offset_right = 336.0
-offset_bottom = 196.0
+offset_left = -324.0
+offset_top = -116.0
+offset_right = 324.0
+offset_bottom = 116.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.10966, 1.13947)
@@ -100,11 +98,18 @@ octave = 1
 
 [node name="BlackNotes" type="PanelContainer" parent="CanvasLayer"]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 304.0
-offset_top = 192.0
-offset_right = 952.0
-offset_bottom = 424.0
-scale = Vector2(0.895426, 0.795201)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -288.0
+offset_top = -212.0
+offset_right = 360.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.918679, 0.799694)
 theme = ExtResource("3_x4jb4")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/BlackNotes"]
@@ -162,3 +167,5 @@ theme = ExtResource("3_x4jb4")
 text = "P"
 note = "d_sharp_2"
 octave = 1
+
+[node name="NotePlayer" parent="." instance=ExtResource("5_f6cqq")]

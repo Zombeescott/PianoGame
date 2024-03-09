@@ -1,0 +1,121 @@
+[gd_scene load_steps=30 format=3 uid="uid://brb12g12fwd66"]
+
+[ext_resource type="Script" path="res://Scripts/note_player.gd" id="1_loscb"]
+[ext_resource type="AudioStream" uid="uid://7hg5no60p0pa" path="res://Assets/Sounds/Piano/Piano.mf.C1.ogg" id="2_t25ph"]
+[ext_resource type="AudioStream" uid="uid://cfjpxvfr3avvg" path="res://Assets/Sounds/Piano/Piano.mf.C2.ogg" id="3_7ccvf"]
+[ext_resource type="AudioStream" uid="uid://db8al0rgryc5d" path="res://Assets/Sounds/Piano/Piano.mf.C3.ogg" id="4_8hasy"]
+[ext_resource type="AudioStream" uid="uid://bgbywqmiqjnwk" path="res://Assets/Sounds/Piano/Piano.mf.D1.ogg" id="5_e6eby"]
+[ext_resource type="AudioStream" uid="uid://cb4i604dcffxr" path="res://Assets/Sounds/Piano/Piano.mf.D2.ogg" id="6_fmdkv"]
+[ext_resource type="AudioStream" uid="uid://cyqxyfnj4vosk" path="res://Assets/Sounds/Piano/Piano.mf.A1.ogg" id="7_58xnd"]
+[ext_resource type="AudioStream" uid="uid://berdmh7rka7di" path="res://Assets/Sounds/Piano/Piano.mf.D3.ogg" id="8_vgg3m"]
+[ext_resource type="AudioStream" uid="uid://bltn4td5tqlq7" path="res://Assets/Sounds/Piano/Piano.mf.Db2.ogg" id="9_6hkny"]
+[ext_resource type="AudioStream" uid="uid://xtuq70pxtnt8" path="res://Assets/Sounds/Piano/Piano.mf.Db3.ogg" id="10_j2vet"]
+[ext_resource type="AudioStream" uid="uid://ce70brn28gge8" path="res://Assets/Sounds/Piano/Piano.mf.E1.ogg" id="11_61j4r"]
+[ext_resource type="AudioStream" uid="uid://ciqf3tlk48pdi" path="res://Assets/Sounds/Piano/Piano.mf.E2.ogg" id="12_u6xwy"]
+[ext_resource type="AudioStream" uid="uid://cuemfgiv31cc8" path="res://Assets/Sounds/Piano/Piano.mf.E3.ogg" id="13_v6wey"]
+[ext_resource type="AudioStream" uid="uid://u1kiwe3rthv3" path="res://Assets/Sounds/Piano/Piano.mf.Eb1.ogg" id="14_the2t"]
+[ext_resource type="AudioStream" uid="uid://cmn65xj2t5cg6" path="res://Assets/Sounds/Piano/Piano.mf.Eb2.ogg" id="15_ic0r2"]
+[ext_resource type="AudioStream" uid="uid://snlhfvb64p1h" path="res://Assets/Sounds/Piano/Piano.mf.Eb3.ogg" id="16_ohi4d"]
+[ext_resource type="AudioStream" uid="uid://coj75m3ivtvlm" path="res://Assets/Sounds/Piano/Piano.mf.F1.ogg" id="17_205gg"]
+[ext_resource type="AudioStream" uid="uid://bynuedd8uyuy0" path="res://Assets/Sounds/Piano/Piano.mf.F2.ogg" id="18_qhp78"]
+[ext_resource type="AudioStream" uid="uid://mpg0w2vmyl3o" path="res://Assets/Sounds/Piano/Piano.mf.G1.ogg" id="19_2djal"]
+[ext_resource type="AudioStream" uid="uid://cjef3x2clgdqc" path="res://Assets/Sounds/Piano/Piano.mf.G2.ogg" id="20_wkfcn"]
+[ext_resource type="AudioStream" uid="uid://bokforg7bsf6h" path="res://Assets/Sounds/Piano/Piano.mf.Gb1.ogg" id="21_2kf7e"]
+[ext_resource type="AudioStream" uid="uid://cgn3puft0xlds" path="res://Assets/Sounds/Piano/Piano.mf.Gb2.ogg" id="22_y4dk7"]
+[ext_resource type="AudioStream" uid="uid://b1ruuuh6wm5gu" path="res://Assets/Sounds/Piano/Piano.mf.Bb1.ogg" id="23_h7jv6"]
+[ext_resource type="AudioStream" uid="uid://cjoqwwn157dt4" path="res://Assets/Sounds/Piano/Piano.mf.Bb2.ogg" id="24_phxsu"]
+[ext_resource type="AudioStream" uid="uid://b33ge6ibj0bmg" path="res://Assets/Sounds/Piano/Piano.mf.B1.ogg" id="25_vgxdv"]
+[ext_resource type="AudioStream" uid="uid://d1ttjnx8xxrg4" path="res://Assets/Sounds/Piano/Piano.mf.B2.ogg" id="26_jim1k"]
+[ext_resource type="AudioStream" uid="uid://bjax31dw75xhm" path="res://Assets/Sounds/Piano/Piano.mf.Ab1.ogg" id="27_cfy44"]
+[ext_resource type="AudioStream" uid="uid://2tj2fp7kj5pm" path="res://Assets/Sounds/Piano/Piano.mf.Ab2.ogg" id="28_e1dh6"]
+[ext_resource type="AudioStream" uid="uid://bmg2ecgmluf4m" path="res://Assets/Sounds/Piano/Piano.mf.A2.ogg" id="29_t5fgl"]
+
+[node name="NotePlayer" type="Node"]
+script = ExtResource("1_loscb")
+
+[node name="C1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_t25ph")
+
+[node name="C2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_7ccvf")
+
+[node name="C3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_8hasy")
+
+[node name="D1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_e6eby")
+
+[node name="D2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_fmdkv")
+
+[node name="D3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_58xnd")
+
+[node name="Db1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_vgg3m")
+
+[node name="Db2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_6hkny")
+
+[node name="Db3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_j2vet")
+
+[node name="E1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_61j4r")
+
+[node name="E2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_u6xwy")
+
+[node name="E3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_v6wey")
+
+[node name="Eb1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_the2t")
+
+[node name="Eb2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("15_ic0r2")
+
+[node name="Eb3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("16_ohi4d")
+
+[node name="F1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("17_205gg")
+
+[node name="F2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("18_qhp78")
+
+[node name="G1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("19_2djal")
+
+[node name="G2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("20_wkfcn")
+
+[node name="Gb1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("21_2kf7e")
+
+[node name="Gb2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("22_y4dk7")
+
+[node name="Bb1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("23_h7jv6")
+
+[node name="Bb2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("24_phxsu")
+
+[node name="B1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("25_vgxdv")
+
+[node name="B2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("26_jim1k")
+
+[node name="Ab1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("27_cfy44")
+
+[node name="Ab2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("28_e1dh6")
+
+[node name="A1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_58xnd")
+
+[node name="A2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("29_t5fgl")

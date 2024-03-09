@@ -15,6 +15,10 @@ run/main_scene="res://Scenes/keyboard.tscn"
 config/features=PackedStringArray("4.0", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+NotePlayer="*res://Scenes/note_player.tscn"
+
 [input]
 
 c_sharp={

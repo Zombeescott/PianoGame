@@ -6,7 +6,8 @@ signal key_pressed
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	# key_pressed.connect(owner.button_pressed.bind())
+	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -16,5 +17,7 @@ func _process(delta):
 
 
 func _on_button_down():
-	print("Note: ", note, " Octave: ", octave)
-	key_pressed.emit(note, octave)
+	# key_pressed.emit(note, octave)
+	
+	if note == "c_whole":
+		NotePlayer.play_note(note, octave)
