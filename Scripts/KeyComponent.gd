@@ -1,7 +1,7 @@
 extends Button
 signal key_pressed
 
-var note : String
+var key : String
 @export var octave : int
 
 # Called when the node enters the scene tree for the first time.
@@ -15,16 +15,25 @@ func _ready():
 	# So both the input map and names of the buttons have to follow the same format.
 	# I did this because before I manually inputted all the notes in the inspector.
 	# So I had to change all of them back and found this was easier.
-	note = self.name
+	key = self.name
 	# print(note)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if Input.is_action_just_pressed(note):
+	if Input.is_action_just_pressed(key):
 		_on_button_down()
 
 
 func _on_button_down():
+	var tempStr : String
 	# key_pressed.emit(note, octave)
-	NotePlayer.play_note(note, octave)
+	
+	# Calculates the note from the key_pressed
+	if key.contains("Whole"):
+		tempStr = key.left(1) + str(octave)
+	else:
+		tempStr = key.left(1) + "b" +  str(octave)
+	
+	# Sends note played
+	NotePlayer.play_note(tempStr, octave)

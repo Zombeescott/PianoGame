@@ -16,19 +16,10 @@ func _ready():
 func _process(delta):
 	pass
 
-# key is the input that was pressed ex: c_whole, c_flat
-func play_note(key : String, octave : int):
-	var tempStr : String
+
+func play_note(note : String, octave : int):
 	# octave += 1
-	print("Note: ", key, " Octave: ", octave)
-	
-	# Calculates the name of the AudioStream
-	if str(key).contains("Whole"):
-		tempStr = key.left(1) + str(octave)
-	else:
-		tempStr = key.left(1) + "b" +  str(octave)
+	print("Note: ", note, " Octave: ", octave)
 	
 	# Plays the note
-	print(tempStr)
-	notes.get(tempStr).play()
-	
+	notes.get(note).play()
