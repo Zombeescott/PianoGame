@@ -13,6 +13,4 @@ func _process(delta):
 
 func button_pressed(note : String, octave : int):
 	# print("Note: ", note, " Octave: ", octave)
-	
-	# TODO: figure out how to play the notes
 	pass

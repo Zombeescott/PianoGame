@@ -40,61 +40,57 @@ theme = ExtResource("2_320ij")
 [node name="C_Whole" parent="CanvasLayer/WhiteNotes/HBoxContainer" instance=ExtResource("2_holbd")]
 layout_mode = 2
 text = "A"
-note = "c_whole"
+octave = 1
 
 [node name="D_Whole" parent="CanvasLayer/WhiteNotes/HBoxContainer" instance=ExtResource("2_holbd")]
 layout_mode = 2
 text = "S"
-note = "d_whole"
+octave = 1
 
 [node name="E_Whole" parent="CanvasLayer/WhiteNotes/HBoxContainer" instance=ExtResource("2_holbd")]
 layout_mode = 2
 text = "D"
-note = "e_whole"
+octave = 1
 
 [node name="F_Whole" parent="CanvasLayer/WhiteNotes/HBoxContainer" instance=ExtResource("2_holbd")]
 layout_mode = 2
 text = "F"
-note = "f_whole"
+octave = 1
 
 [node name="G_Whole" parent="CanvasLayer/WhiteNotes/HBoxContainer" instance=ExtResource("2_holbd")]
 layout_mode = 2
 text = "G"
-note = "g_whole"
+octave = 1
 
 [node name="A_Whole" parent="CanvasLayer/WhiteNotes/HBoxContainer" instance=ExtResource("2_holbd")]
 layout_mode = 2
 text = "H"
-note = "a_whole"
+octave = 1
 
 [node name="B_Whole" parent="CanvasLayer/WhiteNotes/HBoxContainer" instance=ExtResource("2_holbd")]
 layout_mode = 2
 text = "J"
-note = "b_whole"
+octave = 1
 
 [node name="C_Whole2" parent="CanvasLayer/WhiteNotes/HBoxContainer" instance=ExtResource("2_holbd")]
 layout_mode = 2
 text = "K"
-note = "c_whole_2"
-octave = 1
+octave = 2
 
 [node name="D_Whole2" parent="CanvasLayer/WhiteNotes/HBoxContainer" instance=ExtResource("2_holbd")]
 layout_mode = 2
 text = "L"
-note = "d_whole_2"
-octave = 1
+octave = 2
 
 [node name="E_Whole2" parent="CanvasLayer/WhiteNotes/HBoxContainer" instance=ExtResource("2_holbd")]
 layout_mode = 2
 text = ";"
-note = "e_whole_2"
-octave = 1
+octave = 2
 
 [node name="F_Whole2" parent="CanvasLayer/WhiteNotes/HBoxContainer" instance=ExtResource("2_holbd")]
 layout_mode = 2
 text = "'"
-note = "f_whole_2"
-octave = 1
+octave = 2
 
 [node name="BlackNotes" type="PanelContainer" parent="CanvasLayer"]
 self_modulate = Color(1, 1, 1, 0)
@@ -116,56 +112,54 @@ theme = ExtResource("3_x4jb4")
 layout_mode = 2
 theme = ExtResource("3_x4jb4")
 
-[node name="C_Sharp" parent="CanvasLayer/BlackNotes/HBoxContainer" instance=ExtResource("2_holbd")]
+[node name="D_Flat" parent="CanvasLayer/BlackNotes/HBoxContainer" instance=ExtResource("2_holbd")]
 layout_mode = 2
 theme = ExtResource("3_x4jb4")
 text = "W"
-note = "c_sharp"
+octave = 1
 
-[node name="D_Sharp" parent="CanvasLayer/BlackNotes/HBoxContainer" instance=ExtResource("2_holbd")]
+[node name="E_Flat" parent="CanvasLayer/BlackNotes/HBoxContainer" instance=ExtResource("2_holbd")]
 layout_mode = 2
 theme = ExtResource("3_x4jb4")
 text = "E"
-note = "d_sharp"
+octave = 1
 
 [node name="Spacer" type="Control" parent="CanvasLayer/BlackNotes/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="F_Sharp" parent="CanvasLayer/BlackNotes/HBoxContainer" instance=ExtResource("2_holbd")]
+[node name="G_Flat" parent="CanvasLayer/BlackNotes/HBoxContainer" instance=ExtResource("2_holbd")]
 layout_mode = 2
 theme = ExtResource("3_x4jb4")
 text = "T"
-note = "f_sharp"
+octave = 1
 
-[node name="G_Sharp" parent="CanvasLayer/BlackNotes/HBoxContainer" instance=ExtResource("2_holbd")]
+[node name="A_Flat" parent="CanvasLayer/BlackNotes/HBoxContainer" instance=ExtResource("2_holbd")]
 layout_mode = 2
 theme = ExtResource("3_x4jb4")
 text = "Y"
-note = "g_sharp"
+octave = 1
 
-[node name="A_Sharp" parent="CanvasLayer/BlackNotes/HBoxContainer" instance=ExtResource("2_holbd")]
+[node name="B_Flat" parent="CanvasLayer/BlackNotes/HBoxContainer" instance=ExtResource("2_holbd")]
 layout_mode = 2
 theme = ExtResource("3_x4jb4")
 text = "U"
-note = "a_sharp"
+octave = 1
 
 [node name="Spacer2" type="Control" parent="CanvasLayer/BlackNotes/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="C_Sharp2" parent="CanvasLayer/BlackNotes/HBoxContainer" instance=ExtResource("2_holbd")]
+[node name="D_Flat2" parent="CanvasLayer/BlackNotes/HBoxContainer" instance=ExtResource("2_holbd")]
 layout_mode = 2
 theme = ExtResource("3_x4jb4")
 text = "O"
-note = "c_sharp_2"
-octave = 1
+octave = 2
 
-[node name="D_Sharp2" parent="CanvasLayer/BlackNotes/HBoxContainer" instance=ExtResource("2_holbd")]
+[node name="E_Flat2" parent="CanvasLayer/BlackNotes/HBoxContainer" instance=ExtResource("2_holbd")]
 layout_mode = 2
 theme = ExtResource("3_x4jb4")
 text = "P"
-note = "d_sharp_2"
-octave = 1
+octave = 2
 
 [node name="NotePlayer" parent="." instance=ExtResource("5_f6cqq")]
