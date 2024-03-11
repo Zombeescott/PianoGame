@@ -18,7 +18,6 @@ config/icon="res://icon.svg"
 [autoload]
 
 NotePlayer="*res://Scenes/note_player.tscn"
-Keyboard="*res://Scenes/keyboard.tscn"
 
 [input]
 
