@@ -225,6 +225,14 @@ layout_mode = 2
 text = "X"
 
 [node name="Note" parent="CanvasLayer/OctaveMod/HBoxContainer/OctUp" index="1"]
+anchors_preset = 0
+anchor_left = 0.0
+anchor_right = 0.0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 18.0
+offset_bottom = 26.0
+grow_horizontal = 1
 text = "+"
 
 [node name="NotePlayer" parent="." instance=ExtResource("5_f6cqq")]
