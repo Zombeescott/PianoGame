@@ -28,12 +28,17 @@ func _process(delta):
 func _on_button_down():
 	var tempStr : String
 	# key_pressed.emit(note, octave)
+	#octave += 1
 	
 	# Calculates the note from the key_pressed
 	if key.contains("Whole"):
-		tempStr = key.left(1) + str(octave)
+		tempStr = key.left(1) + str(octave+1)
+		NotePlayer.play_note(tempStr, octave)
+	elif key.contains("Flat"):
+		tempStr = key.left(1) + "b" +  str(octave+1)
+		# Sends note played
+		NotePlayer.play_note(tempStr, octave)
 	else:
-		tempStr = key.left(1) + "b" +  str(octave)
+		# Do nothing or play something that isn't implemented
+		pass
 	
-	# Sends note played
-	NotePlayer.play_note(tempStr, octave)

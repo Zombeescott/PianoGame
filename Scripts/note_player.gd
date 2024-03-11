@@ -18,8 +18,9 @@ func _process(delta):
 
 
 func play_note(note : String, octave : int):
-	# octave += 1
 	print("Note: ", note, " Octave: ", octave)
 	
 	# Plays the note
-	notes.get(note).play()
+	if notes.get(note) is AudioStreamPlayer:
+		notes.get(note).play()
+	
