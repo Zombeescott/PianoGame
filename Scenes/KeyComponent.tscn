@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/KeyComponent.gd" id="1_b6qmj"]
 [ext_resource type="Theme" uid="uid://bgjrf1ffhsv5j" path="res://Assets/whiteKey.tres" id="1_kdtc4"]
 
-[node name="Key" type="Button"]
+[node name="Key" type="Button" groups=["keys"]]
 offset_right = 48.0
 offset_bottom = 128.0
 size_flags_horizontal = 3
@@ -22,6 +22,7 @@ offset_bottom = 1.0
 grow_vertical = 0
 theme = ExtResource("1_kdtc4")
 text = "Label"
+metadata/_edit_group_ = true
 
 [node name="Note" type="Label" parent="."]
 layout_mode = 1
